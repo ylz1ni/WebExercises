@@ -60,23 +60,18 @@ p {
 	background-repeat: repeat-x;
 
 	text-align: center;
-
-	line-height: 1;
-}
-h1,h2 {
-  color: #007e7e;
-}
-h2 {
-  color: black;
-}
-div h2 {
-  color: black;
 }
 
 .elixirs h2 {
-  color: blueviolet;
+  color: black;
 }
 
 .elixirs h3 {
   color: #d12c47;
 }
+
+.elixirs {
+  line-height: 1em;
+}
+
+
