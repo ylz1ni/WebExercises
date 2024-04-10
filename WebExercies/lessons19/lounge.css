@@ -1,0 +1,77 @@
+body {
+	font: small Verdana， Helvetica， Arial;
+}
+
+h1, h2 {
+	color: #007e7e; 
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+p#guarantee {
+	border: 1px dashed white ;
+
+	padding: 25px 250px 25px 80px;
+	height: 1.9em;
+
+	font-style: italic Georgia, 'Times New Roman';
+
+	color: #444;
+
+	background:#a7cece url(images/background.gif) no-repeat top left;
+}
+
+p {
+  border: thin dotted rgb(255, 255, 255);
+	border-top-right-radius: 2em;
+	border-bottom-left-radius: 2em;
+}
+#footer {
+  font-size: 3.5vw;
+}
+.elixirs {
+  border-width: thin solid #007e7e;
+	width: 200px;
+	padding-right: 0px 20px 20px 20px;
+  margin-left: 20px;
+	background-image: url(images/cocktail.gif) repeat-x;
+	text-align: center;
+}
+
+.elixirs>h2 {
+  color: black;
+}
+
+.elixirs>h3 {
+  color: #d12c47;
+}
+
+.elixirs {
+  line-height: 1em;
+}
+
+.cd {
+	font-style: italic;
+}
+
+.artist {
+	font-weight: bold;
+}
+
+.elixirs a:link {
+  color: #007e7e;
+}
+
+.elixirs a:visited {
+  color: #333;
+}
+
+.elixirs a:hover {
+  background: #f88396;
+	color: #0d5353;
+}
