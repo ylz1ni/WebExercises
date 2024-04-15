@@ -1,0 +1,38 @@
+p {
+  color: red;
+}
+h1,h2 {
+  font-weight: 600;
+}
+
+h1 {
+  font-weight: 200;
+}
+p {
+  color: red;
+}
+.cname {
+  color: green;
+}
+#iname {
+  color: blue;
+}
+body h1 {
+  background-color: brown;
+}
+div h2 {
+  background-color: aquamarine;
+}
+h1 {
+  background-color: blueviolet;
+}
+p {
+  font-weight: 100;
+}
+p.cname {
+  font-weight: 800;
+}
+p#iname {
+  font-weight: normal;
+}
+
