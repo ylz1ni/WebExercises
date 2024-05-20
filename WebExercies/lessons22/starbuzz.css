@@ -59,3 +59,33 @@ a:visited {
   border-bottom:    thin dotted #675c47;
 }
 
+div.tableContainer {
+  display: table;
+}
+
+div.tableRow {
+  display: table-row;
+}
+
+.main {
+  display: table-cell;
+}
+
+.siderbar {
+  display: table-cell;
+}
+
+div.tableContainer {
+  display: table;
+  border-spacing: 10px;
+}
+
+.main {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.siderbar {
+  display: table-cell;
+  vertical-align: top;
+}
