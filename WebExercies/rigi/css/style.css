@@ -1,0 +1,241 @@
+.main {
+	width: 1900px;
+	margin: 0 auto;
+	/* 元素水平居中 */
+	max-width: 100%;
+	position: relative;
+	padding-left: 15px;
+}
+.main::after {
+	content: "";
+	/* 可以在main元素尾部插入生成内容 */
+	display: block;
+	clear: both;
+	/* 左右不允许浮动元素 */
+}
+
+body {
+	padding-top: 100px;
+	/* 上内边距为100px */
+}
+
+.xian{background-color: #AAC400; height: 5px;}
+.header_out {
+	background: #fff;
+	position: fixed;
+	/* 固定定位 */
+	width: 100%;
+	top: 0;
+	left: 0;
+	transition: all 0.3s;
+	/* 动画过渡为0.3秒 */
+	height: 100px;
+	z-index: 999;
+	/* header元素层级高的覆盖在banner上面，使重叠部分被遮住 */
+}
+.head {
+	height: 100px;
+	position: relative;
+	/* 相对定位 */
+	transition: all 0.3s;
+	/* 动画时间 */
+	transition: all 0.6s cubic-bezier(0.4, 0, 1, 1 );
+	/* 设置动画时间和控制变化的速度曲线 */
+}
+.head .logo { 
+	display: block;
+	float: left;
+	transition: all 0.6s cubic-bezier(0.4, 0, 1, 1);
+}
+.head .logo img {
+	display: block;
+	transition: all 0.6s cubic-bezier(0.4, 0, 1, 1);
+	float: left;
+}
+.head .logo .logo_a {
+	transition: all 0.35s;
+	width: 160px;
+	position: absolute;
+	/* 设置为绝对定位 */
+	top: 0;
+	left: 35px;
+	height: 160px;
+}
+.head .logo .logo_b {
+	margin-left: 14px;
+	margin-top: 10px;
+	display: none;
+	/* 使元素不存在 */
+}
+.head .nav {
+	margin-left: 180px;
+	float: left;
+}
+.head .nav li {
+	float: left;
+	position: relative;
+	margin: 0 4px;
+}
+.head .nav li>a {
+	line-height: 100px;
+	padding: 0 15px;
+	/* 设置上内边距为0px；右边为15px */
+	font-size: 16px;
+	color: #333;
+	display: block;
+	color: #007A5A;
+	font-size: 20px;
+	/* 字体尺寸 */
+	font-weight: 700;
+	/* 字体宽度 */
+}
+.head .nav li>a:hover{
+	background-color: #EFEFEF;
+}
+
+.head .nav li .sub {
+	position: absolute;
+	/* 设置为绝对定位 */
+	min-width: 100%;
+	left: 50%;
+	top: 110%;
+	background: #fff;
+	white-space: nowrap;
+	/* 强制文本不换行 */
+	padding: 0 0;
+	border-top: 3px solid #c2131c;
+}
+.head .nav li .sub a {
+	text-align: center;
+	/* 设置文本水平对齐放置在中间 */
+	background: #fff;
+	display: block;
+	padding: 0 10px;
+	font-size: 14px;
+	line-height: 40px;
+	/* 设置行间距离 */
+	color: #949494;
+	min-width: 105px;
+	color: #333;
+	border-bottom: 1px solid #d2d2d2;
+}
+.tel .yi{
+	width: 115px;
+	float: left;
+}
+.tel .yi img{
+	width: 100%;
+	margin-top: 10px;
+}
+.tel .er{
+	width: 50px;
+	float: left;
+	margin-top: 10px
+}
+.tel .er img{
+	width: 40px;
+	height: 40px;
+}
+.tel .san{
+	width: 80px;
+	float: left;
+}
+.tel .san img{
+	width: 80px;
+	height: 60px;
+}
+.tel .si{
+	width: 100px;
+	float: left;
+}
+.tel .si img{
+	width: 100px;
+	height:60px ;
+}
+
+.head .tel p {
+	font-size: 15px;
+	margin-bottom: 2px;
+}
+.head .tel {
+	display: block;
+	font-size: 30px;
+	float: right;
+	margin-top: 10px;
+	margin-left: 25px;
+
+}
+.banner {
+	background: url(../img/banner.jpg);
+	height: 1000px;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.banner  h3{
+	top: 45%;
+	left: 34%;
+	position: absolute;
+	font-size: 50px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.banner a{
+	position: absolute;
+	bottom: 30px;
+	left: 43%;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.banner img {
+	width: 100%;
+}
+
+.main1{width: 740px;margin: 0 auto;}
+.kuai1{text-align: center;margin: 50px 0;}
+.kuai1 h3{font-size: 20px;}
+.kuai1 h1{font-size: 45px;color: #007A5A;font-weight: bold;margin: 25px 0;}
+.kuai1 p{
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.clearfix::after{	
+	clear: both;
+	/* 浮动全部清除 */
+}
+
+
+/* 新的css做到这里 其他不要动 下面是关于logo放大缩小的css */
+
+.nav li:hover .sub {
+	top: 100%;
+	opacity: 1;
+	visibility: visible;
+}
+.header_out.on {
+	height: 75px;
+}
+.header_out.on .head {
+height: 75px;
+}
+
+/* sss */
+.header_out.on .head .nav li>a {
+	line-height: 60px;
+}
+.header_out.on .head .tel {
+	margin-top: 5px;
+}
+.header_out.on .head .logo .logo_a {
+	height: 0;
+}
+.header_out.on .head .logo img.logo_b {
+	display: block;
+    height: 100px;
+    margin-top: 5px;
+    left: 75px;
+    position: absolute;
+}
